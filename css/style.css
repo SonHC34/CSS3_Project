@@ -1,0 +1,172 @@
+/*main content*/
+.content-card {
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 20px;
+}
+
+.content-card img:hover {
+    border-color: #DA291C;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;    
+}
+
+h1 {
+    font-size: 45px;
+}
+
+#first-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+
+    border-radius: 2px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+}
+
+figcaption {
+    text-align: center;
+}
+
+/*header*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+ul li {
+    font-size: 24px;
+    list-style-type: none;
+}
+
+nav {
+    background-color: #DA291C;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    gap: 45px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #A31F15;
+}
+
+.skip-content {
+    position: absolute;
+    top: -100px;
+    left: 20px;
+}
+
+.skip-content:focus {
+    top: 70px;
+}
+
+
+/*img in main content */
+
+.img-main-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid white;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.img-main-content:hover {
+    border-color: #DA291C;
+}
+
+/* bcak to top*/
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: antiquewhite;
+
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    justify-content: center;
+}
+
+.back-to-top img {
+    object-fit: contain;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* footer */
+
+.footer {
+    display: block;
+    text-align: center;
+    
+}
+
+
+/* gallery */
+
+#photo-gallery {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 15px;
+}
+
+#photo-gallery img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+    border: 6px solid #DA291C;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+}
+
+#photo-gallery img:nth-child(even) {
+    border-radius: 40px 4px 40px 4px;
+    border-color: rgba(255, 242, 0, 0.704);
+    
+}
+
+
+#photo-gallery img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+}
